@@ -309,9 +309,8 @@ public class CreateOOP {
 
         //---=== Making The file ===---
 
-//        String fileName = "C:\\Users\\Assaf Cohen\\IdeaProjects\\mamram\\src\\" + Name() + ".java";
-        String fileName = "C:\\Users\\Yariv\\Documents\\coding\\java\\mamram\\src\\" + Name() + ".java"; // making the file name to a spacific path
-//        String fileName = Name() + ".java"; // making the file name
+        String currentDirectory = System.getProperty("user.dir");
+        String fileName = currentDirectory + "\\src\\" + Name() + ".java"; // making the file name to a spacific path
 
         String fileContent = _fin_OOP; // adding the whole Content of the file
 
